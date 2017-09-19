@@ -1,7 +1,6 @@
 #include "../include/catch.hpp"
 
 #include "../include/string_soma.hpp"
-#include "../include/lista_func.hpp"
 
 TEST_CASE ("soma_string" , "algo") {
 	SECTION("soma_positiva"){
