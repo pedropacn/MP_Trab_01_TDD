@@ -41,6 +41,7 @@ TEST_CASE ("soma_string" , "algo") {
 	SECTION("mais_de_3_numeros") {
 		REQUIRE (-1 == soma_string("1,2,3,4\n"));
 		REQUIRE (10 == soma_string("1,2,3\n,4\n"));
+		REQUIRE (11 == soma_string("10,1\n"));
 		SECTION("numero_maior_que_1000"){
 			REQUIRE (5 == soma_string("3,2000\n"));
 		}

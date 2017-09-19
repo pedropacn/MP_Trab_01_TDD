@@ -4,6 +4,8 @@ CFLAGS=-I$(IDIR)
 
 ODIR=obj
 
+LIBS=-lm
+
 _DEPS = string_soma.hpp catch.hpp
 DEPS = $(patsubst %,$(IDIR)/%,$(_DEPS))
 
