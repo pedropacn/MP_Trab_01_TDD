@@ -27,21 +27,3 @@ void insereInicio(const char str[20], t_lista * l){
   if(l->fim == NULL)
     l->fim = novoprimeiro;
 }
-
-int lista_tamanho(t_lista * l){
-    t_elemento * atual = l->inicio;
-    int cont = 0;
-    while(atual != NULL){
-       atual = atual->proximo;
-       ++cont;
-    }   
-    return cont;
-}
-
-void imprimir(t_lista * l){
-    t_elemento * atual = l->inicio;
-    while(atual != NULL){
-       puts(atual->delimitador);
-       atual = atual->proximo;
-    }   
-}
